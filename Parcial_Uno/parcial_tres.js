@@ -66,19 +66,40 @@ function agregarNumeros (numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  let suma = 0;
+
+  for (let i = 0; i < numeros.length; i++) {
+    suma += numeros[i];
+  }
+
+  return suma;
 }
 
 function promedioResultadosTest (resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
-  // Tu código:
+  // Tu código: let suma = 0;
+
+  for (let i = 0; i < resultadosTest.length; i++) {
+    suma += resultadosTest[i];
+  }
+
+  return suma / resultadosTest.length;
 }
 
 function numeroMasGrande (numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  let mayor = numeros[0];
+  for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > mayor) {
+      mayor = numeros[i];
+    }
+  }
+  return mayor;
 }
+
 
 function multiplicarArgumentos () {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
